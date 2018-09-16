@@ -1,0 +1,79 @@
+header{
+    background-color: #B22222;
+    color: #FFFFFF;
+    margin: 2%;
+    margin-bottom: 0%;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    padding: 2%;
+}
+nav{
+    padding-right: 2%;
+    padding-left: 2%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+
+}
+h1,h2,footer{
+    text-shadow: 5px 5px #000000;
+}
+
+body{
+    background-color:#002D4D;
+    color: white;
+}
+#content{
+    background: rgba(255,255,255,.5);
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    z-index: -1;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+footer{
+    margin: 2%;
+    margin-top: 0%;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    padding: 2%;
+    background-color:  #333;
+}
+
+
+.myphoto{
+    position: absolute;
+    margin-left: 50%;
+}
+
+.hobbyphoto{
+    position: relative;
+    margin-top: 1%;
+}
+.email{
+    color: white;
+}

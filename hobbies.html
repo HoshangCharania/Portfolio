@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+</body>
+<header>
+<h1>Hoshang Charania</h1>
+<h3>My Portfolio</h3>
+</header>
+<nav>
+        <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="education.html">Education</a> </li>
+                <li><a href="contact.html">Contact</a><li>
+                <li><a href="hobbies.html">Hobbies</a><li>
+             </ul>
+</nav>
+<div id="content">
+    <div class="wrapper">
+        <h2>Hobbies:</h2>
+        <h2>Soccer:<button onclick="getHobby(1)">+</button></h2> 
+        <div id="Soccer">
+            <li>Support Arsenal.</li>
+            <li>Played in Centre Midfield when I was in college, vice captain of the college soccer team.</li>
+            <div class="hobbyphoto">
+                    <svg width="500" height="250" >
+                            <defs>
+                                <clipPath id="circleView">
+                                    <circle cx="250" cy="125" r="125" fill="#FFFFFF" />            
+                                </clipPath>
+                            </defs>
+                        <image width="500" height="250" xlink:href="images/arsenal.jpg" clip-path="url(#circleView)" />
+                            
+                         </svg>
+                        </div>
+        </div>
+        <h2>Programming:<button onclick="getHobby(2)">+</button> </h2>
+        <div id="Programming">
+                <li>Love learning new languages</li>
+                <li>I'm on Lynda, browsing through videos for most of the day.</li>
+                <li>I'm grateful, that I'm doing what I love.</li>
+                <div class="hobbyphoto">
+                        <svg width="500" height="250" >
+                                <defs>
+                                    <clipPath id="circleView">
+                                        <circle cx="250" cy="125" r="125" fill="#FFFFFF" />            
+                                    </clipPath>
+                                </defs>
+                            <image width="500" height="250" xlink:href="images/programmer.jpg" clip-path="url(#circleView)" />
+                                
+                             </svg>
+                            </div>
+            </div>
+        <h2>Gaming:<button onclick="getHobby(3)">+</button> </h2>
+        <div id="Gaming">
+            <li>PSN ID: railer94</li>
+            <li>Used to be really good at Fifa, then life happened.</li>
+            <li>I binge through story games, if I have free time now and then.</li>
+            <div class="hobbyphoto">
+                    <svg width="500" height="250" >
+                            <defs>
+                                <clipPath id="circleView">
+                                    <circle cx="250" cy="125" r="125" fill="#FFFFFF" />            
+                                </clipPath>
+                            </defs>
+                        <image width="500" height="250" xlink:href="images/Uncharted.jpg" clip-path="url(#circleView)" />
+                            
+                         </svg>
+                        </div>
+        </div>
+        </div>
+</div>
+<footer>
+        <p>Hoshang Charania</p>
+        <p>Contact information: <a href="mailto:hoshangcharania@pitt.edu">hoshangcharania@pitt.edu</a>.</p>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>
