@@ -25,7 +25,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -36,12 +36,12 @@ nav li a:hover {
 
 }
 h1,h2,footer{
-    text-shadow: 5px 5px #000000;
+   /* text-shadow: 5px 5px #000000;*/
 }
 
 body{
-    background-color:#002D4D;
-    color: white;
+    background-color: whitesmoke;
+    color:black;
 }
 #content{
     background: rgba(255,255,255,.5);
@@ -49,17 +49,18 @@ body{
     margin-right: 2%;
     padding: 2%;
     z-index: -1;
-    text-shadow:
+    /*text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000;
+    1px 1px 0 #000; */
 }
 footer{
     margin: 2%;
     margin-top: 0%;
     text-align: center;
-    text-shadow: 2px 2px #000000;
+    color: whitesmoke;
+    text-shadow: 2px 2px #333;
     padding: 2%;
     background-color:  #333;
 }
@@ -75,5 +76,13 @@ footer{
     margin-top: 1%;
 }
 .email{
-    color: white;
+    color: black;
+}
+.circle ul{
+    list-style-type: circle;
+
+}
+.square ul{
+    list-style-type: square;
+
 }
