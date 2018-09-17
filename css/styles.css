@@ -75,6 +75,10 @@ footer{
     position: relative;
     margin-top: 1%;
 }
+.hphoto{
+    width: 20%;
+    height:20%;
+}
 .email{
     color: black;
 }
