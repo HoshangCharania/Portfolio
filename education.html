@@ -6,14 +6,16 @@
   <meta charset="utf-8">
   <title>The HTML5 Herald</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
+<div class="container">
 <header>
 <h1>Hoshang Charania</h1>
 
 <h3>My Portfolio</h3>
 </header>
-<nav>
+<nav id="main-nav">
         <ul>
                 <li><a href="index.html">Overview</a></li>
                 <li><a href="experience.html">Experience</a></li>
@@ -22,34 +24,53 @@
                 <li><a href="hobbies.html">Hobbies</a><li>
              </ul>
 </nav>
-<div id="content">
-    <div class="wrapper">
-        <h1>Education:</h1>
-        <ul class="square">
-            <li>
-        <h3>Graduate(Master's):</h3>
-        <h4>University of Pittsburgh</h4>
-        <h3>Master's in Information Science</h3>
-        <h4> Specialization in Big Data Analytics</h4>
-        GPA(3.88/4)
-    </li>
-        </ul>
-        <ul class="square">
-                <li>
-            <h3>Undergraduate(Bachelor's):</h3>
-            <h4>University of Mumbai</h4>
-            <h3>Bachelor's in Electronics and Telecommunication Engineering</h3>
-            <h4> Specialization in Information Security and Management</h4>
-            GPA(3.55/4)
-        </li>
-            </ul>
-    </div>      
-</div>
+
+        <nav class="col-sm-3" id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked">
+                  <li><a href="#section1">Back to Top</a></li>
+                  <li><a href="#section2">Graduate Degree</a></li>
+                  <li><a href="#section3">Undergraduate Degree</a></li>                
+               </ul>
+        </nav>
+            <div class="panel-heading text-center"id="section1">
+                    <h3>Education: <small class="text-muted">Studies. If I could I would study all my life.</small></h3>
+            </div>
+        <div class="panel-body content">
+        <div class="row" id="section2">
+                <div class="row">
+                <div class="col-sm-6">
+                <p class="text-info"><strong>Master's in Information Science</strong></p>
+                <p class="text-info"><em>University of Pittsburgh, Pittsburgh</em></p>
+                </div>
+                <div class="col-sm-6">
+                                <p class="text-muted text-right"><strong>August 2018- Current</strong></p>
+                </div>
+                </div>
+                <ol>
+                                <li><p class="text-info">Specialization in Big Data Analytics</p></li>
+                                <li><p class="text-info">GPA(3.88/4)</p></li>
+                </ol> 
+                </div>
+        <div class="row" id="section3">
+                <div class="row">
+                <div class="col-sm-6">
+                <p class="text-info"><strong>Bachelor's in Electronics and Telecommunication</strong></p>
+                <p class="text-info"><em>Mumbai University, Mumbai</em></p>
+                </div>
+                <div class="col-sm-6">
+                                <p class="text-muted text-right"><strong>August 2012- May 2016</strong></p>
+                </div>
+                </div>
+                <ol>
+                                <li><p class="text-info">Specialization in Information Management and Network Security</p></li>
+                                <li><p class="text-info">GPA(3.55/4)</p></li>
+                </ol> 
+                </div>   
+        </div>     
 <footer>
         <p>Hoshang Charania</p>
         <p>Contact information: <a href="mailto:hoshangcharania@pitt.edu">hoshangcharania@pitt.edu</a>.</p>
 </footer>
-
-
+</div>
 </body>
 </html>

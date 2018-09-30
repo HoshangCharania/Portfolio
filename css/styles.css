@@ -1,15 +1,18 @@
 header{
-    background-color: #B22222;
+    background-color: #2e3951;
     color: #FFFFFF;
-    margin: 2%;
     margin-bottom: 0%;
     text-align: center;
     text-shadow: 2px 2px #000000;
-    padding: 2%;
+    padding: 4%;
 }
 nav{
-    padding-right: 2%;
-    padding-left: 2%;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+nav:hover{
+    opacity: 1.0;
 }
 nav ul {
     list-style-type: none;
@@ -18,7 +21,9 @@ nav ul {
     overflow: hidden;
     background-color: #333;
 }
-
+#main-nav{
+    opacity: 1.0;
+}
 nav li {
     float: left;
 }
@@ -47,7 +52,6 @@ body{
     background: rgba(255,255,255,.5);
     margin-left: 2%;
     margin-right: 2%;
-    padding: 2%;
     z-index: -1;
     /*text-shadow:
     -1px -1px 0 #000,
@@ -56,19 +60,24 @@ body{
     1px 1px 0 #000; */
 }
 footer{
-    margin: 2%;
-    margin-top: 0%;
     text-align: center;
     color: whitesmoke;
     text-shadow: 2px 2px #333;
     padding: 2%;
     background-color:  #333;
 }
+.bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+}
 
+.page{
+    height: 100%;
+}
 
-.myphoto{
-    position: absolute;
-    margin-left: 50%;
+.photo{
+    width: 30%;
+    height: 30%;
 }
 
 .hobbyphoto{
@@ -90,3 +99,55 @@ footer{
     list-style-type: square;
 
 }
+.hobby {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+.hobby:hover {
+    border-color: #f1f1f1;
+}
+
+#section1 {color: #fff; background-color: #000; padding-top: 5%; padding-bottom: 5%;}
+#section2 {color: #000; background-color: #fff; padding-top: 5%; padding-bottom: 5%;}
+#section3 {color: #fff; background-color: #000; padding-top: 5%; padding-bottom: 5%;}
+#section4 {color: #000; background-color: #fff; padding-top: 5%; padding-bottom: 5%;}
+#section5 {color: #fff; background-color: #000; padding-top: 5%; padding-bottom: 5%;}
+
+ul.nav-pills {
+    top: 50%;
+    right: 11%;
+    position: fixed;
+}
+div.col-sm-9 div {
+    height: 250px;
+    font-size: 28px;
+}
+
+#section1 .text-info, #section2 .text-info,#section3 .text-info,#section4 .text-info, #section5 .text-info{
+    color: inherit;
+}
+
+.text-info{
+    margin-left: 2%;
+}
+
+.black{
+    color: whitesmoke;
+    background-color: #000;
+}
+.white{
+    color: whitesmoke;
+    background-color: #000;
+}
+
+#slideSource {
+    opacity: 1;
+    transition: opacity 3s; 
+  }
+  
+#slideSource.fade {
+    opacity: 0;
+  }

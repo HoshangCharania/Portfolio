@@ -4,40 +4,79 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
+  <title>Hoshang Charania</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
 </head>
 <body>
-<header>
-<h1>Hoshang Charania</h1>
-
-<h3>My Portfolio</h3>
-</header>
-<nav>
-    <ul>
-       <li><a href="index.html">Overview</a></li>
-       <li><a href="experience.html">Experience</a></li>
-       <li><a href="education.html">Education</a> </li>
-       <li><a href="contact.html">Contact</a><li>
-       <li><a href="hobbies.html">Hobbies</a><li>
-    </ul>
-</nav>
-<div id="content">
-    <div class="wrapper">
-        <h2>Email Address:</h2>
-        <h3><a class="email" href="mailto:hoshangcharania@pitt.edu">hoshangcharania@pitt.edu</a></h3>
-        <h2>Contact Number:</h2>
-        <h3>412-849-7401</h3>
-        <h2>Social Media</h2>
-        <h3><a class="email" href="https://www.linkedin.com/in/hoshangcharania/">LinkedIn</a></h3>
-        <h3><a class="email" href="https://twitter.com/h0shang">Twitter</a></h3>
-    </div>      
-</div>
-<footer>
-        <p>Hoshang Charania</p>
-        <p>Contact information: <a href="mailto:hoshangcharania@pitt.edu">hoshangcharania@pitt.edu</a>.</p>
-</footer>
-
-
+        <div class="container">
+        <header>
+                <h1>Hoshang Charania</h1>
+                <h3>My Portfolio</h3>
+        </header>
+        <nav id="main-nav">
+                <ul>
+                        <li><a href="index.html">Overview</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="education.html">Education</a> </li>
+                        <li><a href="contact.html">Contact</a><li>
+                        <li><a href="hobbies.html">Hobbies</a><li>
+                     </ul>
+        </nav>
+                <div class="panel-body content">
+                  <div class="col-md-6 col-md-offset-3">
+                      <form id="contact-form" class="form-horizontal">
+                      <fieldset>
+                            <div class="panel-heading text-center">
+                                    <h3>Leave a Comment: <small class="text-muted">Thank you!</small></h3>
+                            </div>
+                        <div id="form-container">
+                          <div class="form-group">
+                            <label class="col-md-3 control-label" for="name">Name</label>
+                            <div class="col-md-6">
+                              <input id="name" type="text" placeholder="Enter your real name" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Comment Name</label>
+                                <div class="col-md-6">
+                                  <input id="comment-name" type="text" placeholder="Enter Name to be displayed" class="form-control">
+                                </div>
+                              </div>
+                          <div class="form-group">
+                            <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                            <div class="col-md-6">
+                              <input id="email" type="email" placeholder="Your email" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-md-3 control-label" for="message">Your message</label>
+                            <div class="col-md-6">
+                              <textarea class="form-control" id="comment" placeholder="Enter your Comment" rows="5"></textarea>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-md-12 text-right" id="spin-area">
+                              <button type="button" class="btn btn-primary" onclick="validation()">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      </form>
+                  </div>
+                </div>
+                <button type="button" id="remove" class="btn btn-primary disabled" onclick="removecomments()">Disabled(No Comments)</button>
+                <div class="panel-heading text-left">
+                        <h3>Comments: </h3>
+                </div>
+                <div id="Comments">
+                </div>
+                <footer>
+                        <p>Hoshang Charania</p>
+                        <p>Contact information: <a href="mailto:hoshangcharania@pitt.edu">hoshangcharania@pitt.edu</a>.</p>
+                </footer>
+        </div>
+<script src="scripts/contact_script.js"></script>
 </body>
 </html>
