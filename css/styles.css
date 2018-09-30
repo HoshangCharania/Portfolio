@@ -14,7 +14,7 @@ nav{
 nav:hover{
     opacity: 1.0;
 }
-nav ul {
+#main-nav ul, #side-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,11 +24,11 @@ nav ul {
 #main-nav{
     opacity: 1.0;
 }
-nav li {
+#main-nav li, #side-nav li {
     float: left;
 }
 
-nav li a {
+#main-nav li a, #side-nav li a {
     display: block;
     color: whitesmoke;
     text-align: center;
@@ -36,7 +36,7 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover {
+#main-nav li a:hover, #side-nav li a:hover {
     background-color: #111;
 
 }
