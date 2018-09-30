@@ -39,6 +39,7 @@ function validation(){
     theButton.classList.remove("disabled");
     theButton.classList.add("enabled");
     theButton.innerHTML="Delete Comments";
+    document.getElementById('remove').disabled=false;
     if(comment_count==0){
         alert("Only 5 comments allowed");
         return;
@@ -85,7 +86,9 @@ function validation(){
     * 
    */
   function removecomments(){
+    comment_count=5;
     var theButton= document.getElementById("remove");
     theButton.classList.remove("disabled");
     document.getElementById("Comments").innerHTML = "";
+    document.getElementById('remove').disabled=true;
   }

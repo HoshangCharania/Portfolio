@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hoshang Charania</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -23,56 +24,60 @@
                 <li><a href="hobbies.html">Hobbies</a><li>
              </ul>
 </nav>
-<nav>
-<ul class="nav nav-pills nav-stacked">
+<div class="row">
+<nav class="col-sm-3" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked">
                 <li><a href="#section1">Go to Top</a></li>
                 <li><a href="#section2">Soccer</a></li>
                 <li><a href="#section3">Programming</a></li>
                 <li><a href="#section4">Gaming?</a></li>                   
              </ul>
       </nav>
+</div>
+<div class="panel">
 <div class="panel-heading text-center"id="section1">
                 <h3>Hobbies: <small class="text-muted">What I do when I have free time. Free time. Lol.</small></h3>
         </div>
 <div class="panel-body content">
         <div class="row" id="section2">
-                                <div class="row">
                                 <div class="col-sm-6">
-                                <p class="text-info"><strong>Soccer: <button onclick="getHobby(1)">+</button></strong></p>
+                                <p class="text-info"><strong>Soccer: <button type="button" onclick="getHobby(1)">+</button></strong></p>
                                 </div>
-                                </div>
+                                <div class="col-sm-12">
                                 <ol id="Soccer">
                                                 <li><p class="text-info">Support Arsenal.</p></li>
                                                 <li><p class="text-info">Played in Centre Midfield when I was in college, vice captain of the college soccer team.</p></li>
                                                 <img src="images/arsenal.jpg" class="img-circle photo center-block img-responsive" alt="Arsenal">
                                 </ol> 
+                                </div>
           </div>
           <div class="row" id="section3">
-                        <div class="row">
                         <div class="col-sm-6">
-                        <p class="text-info"><strong>Programming: <button onclick="getHobby(2)">+</button></strong></p>
+                        <p class="text-info"><strong>Programming: <button type="button" onclick="getHobby(2)">+</button></strong></p>
                         </div>
-                        </div>
+                        <div class="col-sm-12">
                         <ol id="Programming">
                                         <li><p class="text-info">Love learning new languages.</p></li>
                                         <li><p class="text-info">I'm on Lynda, browsing through videos for most of the day.</p></li>
                                         <li><p class="text-info">I'm grateful, that I'm doing what I love.</p></li>
                                         <img src="images/programmer.jpg" class="img-circle photo center-block img-responsive" alt="Programming">
                         </ol> 
+                        </div>
           </div>
           <div class="row" id="section4">
-                        <div class="row">
                         <div class="col-sm-6">
-                        <p class="text-info"><strong>Gaming: <button onclick="getHobby(3)">+</button></strong></p>
+                        <p class="text-info"><strong>Gaming: <button type="button" onclick="getHobby(3)">+</button></strong></p>
                         </div>
-                        </div>
+                        <div class="col-sm-12">
                         <ol id="Gaming">
                                         <li><p class="text-info">PSN ID: railer94</p></li>
                                         <li><p class="text-info">Used to be really good at Fifa, then life happened.</p></li>
                                         <li><p class="text-info">I binge through story games, if I have free time now and then.</p></li>
                                         <img src="images/Uncharted.jpg" class="img-circle photo center-block img-responsive" alt="Uncharted game photo">
                         </ol> 
+                        </div>
           </div>
+</div>
 </div>
 <footer>
         <p>Hoshang Charania</p>
